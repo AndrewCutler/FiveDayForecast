@@ -1,0 +1,40 @@
+.card {
+  width: 210px;
+  height: 250px;
+  margin: auto 8px;
+  display: block;
+  float: left;
+  border-radius: 6%;
+  border: 4px solid rgb(158, 140, 223);
+}
+
+.day{
+  height: 25%;
+  border-radius: 6px 6px 0px 0px;
+  background: rgb(158, 140, 223);
+}
+
+.icon {
+  height: 45%;
+  background: rgb(218, 175, 235);
+}
+
+.bottom {
+  height: 30%;
+  background: rgb(158, 140, 223);
+}
+
+.temp {
+  width: 30%;
+  float: left;
+}
+
+.hiLo{
+  width: 40%;
+  float: left;
+}
+
+.wind {
+  width: 30%;
+  float: left;
+}

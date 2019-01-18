@@ -1,14 +1,14 @@
 .card {
   width: 210px;
   height: 250px;
-  margin: auto 8px;
+  margin: 8px;
   display: block;
   float: left;
   border-radius: 6%;
   border: 4px solid rgb(158, 140, 223);
 }
 
-.day{
+.day {
   height: 25%;
   border-radius: 6px 6px 0px 0px;
   background: rgb(158, 140, 223);
@@ -19,9 +19,15 @@
   background: rgb(218, 175, 235);
 }
 
+.icon img{
+  margin: 16px auto;
+  width: 30%;
+}
+
 .bottom {
   height: 30%;
   background: rgb(158, 140, 223);
+  font-size: 70%;
 }
 
 .temp {
@@ -30,11 +36,18 @@
 }
 
 .hiLo{
+  background: rgb(175, 159, 240);
   width: 40%;
   float: left;
+  height: 100%;
 }
 
 .wind {
   width: 30%;
   float: left;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

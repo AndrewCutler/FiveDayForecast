@@ -1,9 +1,10 @@
 // url with API key for weather data: http://api.openweathermap.org/data/2.5/forecast?q=10309,us&units=imperial&APPID=f9c997b1dda662b8a55159163b5a1342
-//url for map: https://tile.openweathermap.org/map/precipitation_new/1/1/1.png?appid=f9c997b1dda662b8a55159163b5a1342
+//url for map: https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=f9c997b1dda662b8a55159163b5a1342
 //this map is for precipitation only; consult docs for other info: https://openweathermap.org/api/weathermaps
 import React, { Component } from 'react';
 import './App.css';
 import DayCard from './DayCard';
+import Map from './Map';
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +38,12 @@ class App extends Component {
     const display = this.state.isLoaded ? weatherDisplay : "Loading..."
     return (
       <div className="App">
-        {display}
+        <div>
+          {display}
+        </div>
+        <div>
+          <Map/>
+        </div>
       </div>
     );
   }

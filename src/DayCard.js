@@ -13,6 +13,8 @@ class DayCard extends Component {
     const dayOfWeek = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     const day = dayOfWeek[dayData.getDay()]
 
+    const date = dayData.getDate();
+
     const monthOfYear = ["January","February","March","April","May","June","July","August","Septemer","October","November","December"]
     const month = monthOfYear[dayData.getMonth()]
 
@@ -27,7 +29,8 @@ class DayCard extends Component {
           {/* SHOW DATE INFO */}
           <div className="day">
             <p>{day},</p>
-            <p>{month} {year}</p>
+            <p>{month} {date}</p> 
+            <p>{year}</p>
           </div>
 
           {/* SHOW WEATHER ICON */}
@@ -44,7 +47,7 @@ class DayCard extends Component {
 
             <div className="hiLo">
               <p>Today's high:</p>{this.props.weather[this.props.index].main.temp_max}
-              <p>Today's low:</p>{this.props.weather[0].main.temp_min}
+              <p>Today's low:</p>{this.props.weather[this.props.index].main.temp_min}
             </div>
 
             <div className="wind">

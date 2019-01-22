@@ -1,11 +1,11 @@
 .card {
-  width: 270px;
-  height: 350px;
+  width: 280px;
+  height: 300px;
   margin: 8px;
   display: block;
   float: left;
   border-radius: 10% 0 10% 0;
-  border: 4px solid rgb(158, 140, 223);
+  border: 4px solid rgb(139, 118, 216);
 }
 
 .day {
@@ -27,7 +27,7 @@
 .bottom {
   height: 30%;
   background: rgb(158, 140, 223);
-  font-size: 70%;
+  font-weight: 500;
   border-bottom-right-radius: 18px;
 }
 

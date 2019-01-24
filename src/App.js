@@ -38,12 +38,14 @@ class App extends Component {
     const display = this.state.isLoaded ? weatherDisplay : "Loading..."
     return (
       <div className="App">
-        <div>
-          {display}
-        </div>
-        <div>
-          <Map/>
-        </div>
+        <div className="container">
+            <div className="weather">
+              {display}
+            </div>
+            <div className="cloudmap">
+              <Map/>
+            </div>
+          </div>
       </div>
     );
   }
@@ -54,5 +56,5 @@ export default App;
 
 //TODO: 
 // - allow user to enter zip code or city
-// - install and configure Leaflet JS library for map
+// - change map to weather map and move into cards
 // - add wind direction (N, NE, E, SE, S, SW, W, NW based on angle)

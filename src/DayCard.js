@@ -28,19 +28,14 @@ class DayCard extends Component {
         <div className="card">
           {/* SHOW DATE INFO */}
           <div className="day">
-            <p>{day},</p>
-            <p>{month} {date}</p> 
-            <p>{year}</p>
-          </div>
-
-          <div className="map">
-          <p>weather map to appear here</p>
+            <p>{day}</p>
+            <p>{month} {date}, {year}</p>
           </div>
 
           {/* SHOW WEATHER DATA */}
           <div className="bottom">
             <div className="temp">
-              <p>Temperature:</p>
+              <p>Temp:</p>
               {this.props.weather[this.props.index].main.temp}
             </div>
 
@@ -48,11 +43,6 @@ class DayCard extends Component {
             <div className="icon">
               <img src={[iconUrl] + this.props.weather[this.props.index].weather[0].icon + ".png"}/>
             </div>
-          
-            {/* <div className="hiLo">
-              <p>Today's high:</p>{this.props.weather[this.props.index].main.temp_max}
-              <p>Today's low:</p>{this.props.weather[this.props.index].main.temp_min}
-            </div> */}
 
             <div className="wind">
               <p>Wind (mph):</p>{this.props.weather[this.props.index].wind.speed}

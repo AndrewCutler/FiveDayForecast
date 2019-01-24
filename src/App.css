@@ -1,6 +1,22 @@
 .App {
   text-align: center;
   margin: auto;
+  display: block;
+  height: 900px;
+} 
+
+.weather {
+  margin: auto;
+  height: 316px;
 }
 
+.cloudmap {
+  margin: 18px auto;
+  width: 400px;
+  height: 400px;
+}
 
+#map {
+  width: 390px;
+  height: 390px;
+}

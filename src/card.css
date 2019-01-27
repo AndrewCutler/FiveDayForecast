@@ -1,34 +1,23 @@
 .card {
   width: 280px;
-  height: 300px;
+  height: 150px;
   margin: 8px;
   display: block;
   float: left;
-  border-radius: 10% 0 10% 0;
-  border: 4px solid rgb(139, 118, 216);
 }
 
 .day {
-  height: 25%;
-  border-top-left-radius: 18px;
-  background: rgb(158, 140, 223);
-}
-
-.icon {
   height: 45%;
-  background: rgb(218, 175, 235);
-}
-
-.icon img{
-  margin: 16px auto;
-  width: 30%;
+  border-top-left-radius: 12px;
+  background: rgb(211, 211, 170);
+  border-bottom: 2px solid rgb(139,118,216);
 }
 
 .bottom {
-  height: 30%;
+  height: 55%;
   background: rgb(158, 140, 223);
   font-weight: 500;
-  border-bottom-right-radius: 18px;
+  border-bottom-right-radius: 14px;
 }
 
 .temp {
@@ -36,11 +25,16 @@
   float: left;
 }
 
-.hiLo{
+.icon {
   background: rgb(175, 159, 240);
   width: 40%;
   float: left;
   height: 100%;
+}
+
+.icon img{
+  margin: 8px auto;
+  width: 50%;
 }
 
 .wind {

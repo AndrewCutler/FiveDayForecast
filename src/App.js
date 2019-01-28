@@ -63,19 +63,20 @@ class App extends Component {
     }
 
     //conditional rendering
-    const display = this.state.isLoaded ? weatherDisplay : "Loading..."
+    let display = ""
+    if (this.state.weather) {
+    display = this.state.isLoaded ? weatherDisplay : "Loading..."
+    } else {
+      display = "Location not found. Please enter a valid zip code."
+    }
+
     return (
       <div className="App">
-        {/* TO DO LATER: move form into its own component */}
-        {/* <LocationForm 
+        <LocationForm 
           onChange={this.handleChange} 
           onSubmit={this.handleSubmit} 
           value={this.state.value}
-          ref2={this.input}/> */}
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.value} onChange={this.handleChange}></input>
-          <button type="submit">button</button>
-        </form>
+          setRef={this.input}/>
         {display}
       </div>
     );
@@ -86,6 +87,5 @@ export default App;
 
 
 //TODO:
-// - move form into its own component
-//make DRY
+//DRY up
 //style better

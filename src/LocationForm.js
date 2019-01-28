@@ -11,7 +11,7 @@ class LocationForm extends Component {
     <div className="zipcode">
       <form onSubmit={this.props.onSubmit}>
         Enter zip code: 
-        <input type="text" onChange={this.props.onChange} value={this.props.value} ref={this.props.ref2}></input>
+        <input type="text" onChange={this.props.onChange} value={this.props.value} ref={this.props.setRef}></input>
         <button type="submit">Submit</button>
       </form>
     </div> );

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './card.css';
 
 class DayCard extends Component {
   constructor(props){

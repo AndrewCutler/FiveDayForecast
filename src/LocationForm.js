@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './LocationForm.css'
 
 class LocationForm extends Component {
   constructor(props) {
@@ -9,8 +8,8 @@ class LocationForm extends Component {
   render() { 
     return ( 
     <div className="zipcode">
-      <form onSubmit={this.props.onSubmit}>
-        Enter zip code: 
+      <form onSubmit={this.props.onSubmit} >
+        <span>Enter zip code:</span> 
         <input type="text" onChange={this.props.onChange} value={this.props.value} ref={this.props.setRef}></input>
         <button type="submit">Submit</button>
       </form>

@@ -1,6 +1,5 @@
 // url with API key: http://api.openweathermap.org/data/2.5/forecast?q=10309,us&units=imperial&APPID=f9c997b1dda662b8a55159163b5a1342
 import React, { Component } from 'react';
-import './App.css';
 import DayCard from './DayCard';
 import LocationForm from './LocationForm'
 
